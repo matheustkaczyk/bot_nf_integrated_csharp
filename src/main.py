@@ -9,15 +9,20 @@ from dotenv import load_dotenv
 import json
 
 # Importando arquivos de dicionário que contém XPATHS
-from path_index import login_index, main_index
+from path_index import login_index, main_index, emition_index
 
 load_dotenv('.env')
 
+# Variáveis de ambiente
 CPF = os.environ.get('CPF')
 SENHA = os.environ.get('SENHA')
 CEP = os.environ.get('CEP')
 NCM = os.environ.get('NCM')
 URL = os.environ.get('URL')
+
+RUA = os.environ.get('RUA')
+BAIRRO = os.environ.get('BAIRRO')
+NUMERO = os.environ.get('NUMERO')
 
 # Seta o driver do navegador como Firefox
 # o driver entra com a URL especificada
@@ -50,3 +55,6 @@ with open('clients.json') as clients:
 
   main_selector = driver.find_element(By.XPATH, main_index['main_selector'])
   main_selector.click()
+
+# Tela de emissão
+
