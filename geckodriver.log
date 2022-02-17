@@ -1,0 +1,69 @@
+1645115753037	geckodriver	INFO	Listening on 127.0.0.1:44985
+1645115753531	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43025" "-no-remote" "-profile" "/tmp/rust_mozprofileJhh1xF"
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.078: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.083: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.083: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.083: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.083: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.083: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.084: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.445: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.449: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.450: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.450: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.450: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.450: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.450: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.506: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.510: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.510: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.510: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.510: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.510: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.511: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.553: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.557: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.558: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.558: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.558: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.558: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:8618): Gtk-WARNING **: 13:35:54.558: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645115754718	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJhh1xF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:43025/devtools/browser/e20254a1-8dde-4ed7-b1b2-43e88d00d8ef
+1645115755823	Marionette	INFO	Listening on port 39229
+1645115755850	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1645115760821	Marionette	INFO	Stopped listening on port 39229
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
