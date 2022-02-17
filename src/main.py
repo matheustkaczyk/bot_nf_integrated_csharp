@@ -40,3 +40,13 @@ with open('clients.json') as clients:
   login_btn.click()
 
 # Tela principal
+
+  time.sleep(.5)
+
+  main_selector_wrapper = driver.find_element(By.XPATH, main_index['main_selector_wrapper'])
+  main_selector_wrapper.click()
+
+  time.sleep(1)
+
+  main_selector = driver.find_element(By.XPATH, main_index['main_selector'])
+  main_selector.click()
