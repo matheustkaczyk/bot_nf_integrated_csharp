@@ -58,3 +58,31 @@ with open('clients.json') as clients:
 
 # Tela de emissão
 
+  time.sleep(.5)
+
+  # Scroll para o fim da página para encontrar todos os itens
+  driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
+  time.sleep(.5)
+
+  street_info_me = driver.find_element(By.XPATH, emition_index['street_info'])
+  street_number_me = driver.find_element(By.XPATH, emition_index['street_number'])
+  neighborhood_name_me = driver.find_element(By.XPATH, emition_index['neighborhood_name'])
+  emition_btn = driver.find_element(By.XPATH, emition_index['emition_btn'])
+
+  #Garantindo que os inputs estão vazios
+  street_info_me.send_keys(Keys.CONTROL + 'a')
+  street_info_me.send_keys(Keys.DELETE)
+  street_number_me.send_keys(Keys.CONTROL + 'a')
+  street_number_me.send_keys(Keys.DELETE)
+  neighborhood_name_me.send_keys(Keys.CONTROL + 'a')
+  neighborhood_name_me.send_keys(Keys.DELETE)
+  #######################################
+
+  street_info_me.send_keys(RUA)
+  street_number_me.send_keys(NUMERO)
+  neighborhood_name_me.send_keys(BAIRRO)
+
+  time.sleep(.5)
+
+  emition_btn.click()
