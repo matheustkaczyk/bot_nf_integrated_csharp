@@ -101,28 +101,40 @@ with open('clients.json') as clients:
       receiver_fantasy_name = driver.find_element(By.XPATH, receiver_index['receiver_fantasy_name'])
 
       receiver_radio.click()
-      time.sleep(1.5)
+      time.sleep(2)
 
       receiver_cnpj_input.click()
       receiver_cnpj_input.send_keys(Keys.HOME + client[1]['CNPJ'])
-      receiver_ie_input.send_keys(Keys.HOME + client[1]['IE'])
-      receiver_fantasy_name.send_keys(Keys.HOME + client[1]['NOME_FANTASIA'])
+      receiver_ie_input.send_keys(client[1]['IE'])
+      receiver_fantasy_name.send_keys(client[1]['NOME_FANTASIA'])
 
       # Identificação parte 2
+      time.sleep(1)
 
       # Scroll para o fim da página para encontrar todos os itens
       driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
-      time.sleep(1)
+      time.sleep(.5)
 
       receiver_cep = driver.find_element(By.XPATH, receiver_index['receiver_cep'])
       receiver_street_info = driver.find_element(By.XPATH, receiver_index['receiver_street_info'])
       receiver_street_number = driver.find_element(By.XPATH, receiver_index['receiver_street_number'])
       receiver_neighborhood = driver.find_element(By.XPATH, receiver_index['receiver_neighborhood'])
-      body = driver.find_element_by_tag_name('body');
+      receiver_btn = driver.find_element(By.XPATH, receiver_index['receiver_btn'])
+      time.sleep(.5)
 
-      # Garante que é feito o fetch do CEP
+      # # Garante que é feito o fetch do CEP
       receiver_cep.click()
       receiver_cep.send_keys(Keys.HOME + CEP)
-      body.click()
-      ####################################
+      # ####################################
+
+      time.sleep(1)
+      receiver_street_info.click()
+
+      time.sleep(.5)
+      receiver_street_info.send_keys(client[1]['LOGRADOURO'])
+      receiver_street_number.send_keys(client[1]['NUMERO'])
+      receiver_neighborhood.send_keys(client[1]['BAIRRO'])
+      
+      time.sleep(.5)
+      receiver_btn.click()
