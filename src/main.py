@@ -3,13 +3,14 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from dotenv import load_dotenv
 
 import time
-from dotenv import load_dotenv
 import json
+# import org.openqa.selenium.support.ui.Select
 
 # Importando arquivos de dicionário que contém XPATHS
-from path_index import login_index, main_index, emition_index, receiver_index
+from path_index import login_index, main_index, emition_index, receiver_index, identification_index
 
 load_dotenv('.env')
 
@@ -32,7 +33,7 @@ driver.get(URL)
 with open('clients.json') as clients:
   clients_json = list(json.load(clients).items())
 
-  target_cnpj = '75578914000214'
+  target_cnpj = '10602819000263'
 
   for client in clients_json:
     if client[1]['CNPJ'] == target_cnpj:
@@ -138,3 +139,57 @@ with open('clients.json') as clients:
       
       time.sleep(.5)
       receiver_btn.click()
+      time.sleep(.5)
+
+      # Tela de Identificação da nota
+
+      # Todos os selects da página
+      operation_nature = driver.find_element(By.XPATH, identification_index['nature_operation'])
+      operation_type = driver.find_element(By.XPATH, identification_index['operation_type_select'])
+      operation_finality = driver.find_element(By.XPATH, identification_index['operation_finality'])
+      operation_presence = driver.find_element(By.XPATH, identification_index['operation_presence'])
+      ############################
+
+      time.sleep(.5)
+
+      # operation_nature.click()
+
+      # time.sleep(1)
+
+      # operation_nature_opt = driver = driver.find_element(By.XPATH, identification_index['nature_operation_opt'])
+      # operation_nature_opt.click()
+
+      # time.sleep(.5)
+
+      # operation_type.click()
+
+      # time.sleep(.5)
+
+      # operation_type_opt = driver.find_element(By.XPATH, identification_index['operation_type_select_opt'])
+      # operation_type_opt.click()
+
+      # time.sleep(.5)
+
+      # operation_finality.click()
+
+      # time.sleep(.5)
+
+      # operation_finality_opt = driver.find_element(By.XPATH, identification_index['operation_finality_opt'])
+      # operation_finality_opt.click()
+
+      # time.sleep(.5)
+
+      # operation_presence.click()
+
+      # time.sleep(.5)
+
+      # operation_presence_opt = driver.find_element(By.XPATH, identification_index['operation_presence_opt'])
+      # operation_presence_opt.click()
+
+      # time.sleep(.5)
+
+      # Scrolla até o fim da página para encontrar o botão
+      driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
+      operation_btn = driver.find_element(By.XPATH, identification_index['operation_btn'])
+      operation_btn.click()

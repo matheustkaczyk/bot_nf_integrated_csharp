@@ -34,6 +34,7 @@ identification_index = {
   "operation_type_select": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[2]/div[1]/div/select',
   "operation_type_select_opt": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[2]/div[1]/div/select/option[3]',
   "operation_finality": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[4]/div[1]/div/select',
+  "operation_finality_opt": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[4]/div[1]/div/select/option[2]',
   "operation_presence": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[5]/div[1]/div/select',
   "operation_presence_opt": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[5]/div[1]/div/select/option[3]',
   "operation_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[5]/button[2]'
