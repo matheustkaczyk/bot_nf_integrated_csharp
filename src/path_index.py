@@ -27,3 +27,14 @@ receiver_index = {
   "receiver_neighborhood": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[2]/div[2]/div[8]/div[1]/input',
   "receiver_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[2]/button[2]'
 }
+
+identification_index = {
+  "nature_operation": '//*[@id="combobox-id-1"]',
+  "nature_operation_opt": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[1]/div[1]/div/div/div/div[2]/ul/li[6]/div/span/span',
+  "operation_type_select": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[2]/div[1]/div/select',
+  "operation_type_select_opt": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[2]/div[1]/div/select/option[3]',
+  "operation_finality": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[4]/div[1]/div/select',
+  "operation_presence": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[5]/div[1]/div/select',
+  "operation_presence_opt": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[5]/div[1]/div/select/option[3]',
+  "operation_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[5]/button[2]'
+}

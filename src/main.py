@@ -126,10 +126,10 @@ with open('clients.json') as clients:
       # # Garante que é feito o fetch do CEP
       receiver_cep.click()
       receiver_cep.send_keys(Keys.HOME + CEP)
-      # ####################################
 
       time.sleep(1)
       receiver_street_info.click()
+      # ####################################
 
       time.sleep(.5)
       receiver_street_info.send_keys(client[1]['LOGRADOURO'])
