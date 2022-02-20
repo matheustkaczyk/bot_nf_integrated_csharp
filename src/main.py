@@ -3,11 +3,11 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
 from dotenv import load_dotenv
 
 import time
 import json
-# import org.openqa.selenium.support.ui.Select
 
 # Importando arquivos de dicionário que contém XPATHS
 from path_index import login_index, main_index, emition_index, receiver_index, identification_index
@@ -97,12 +97,15 @@ with open('clients.json') as clients:
 
       # Identificação parte 1
       receiver_radio = driver.find_element(By.XPATH, receiver_index['receiver_type_btn'])
-      receiver_cnpj_input = driver.find_element(By.XPATH, receiver_index['receiver_input_cnpj'])
       receiver_ie_input = driver.find_element(By.XPATH, receiver_index['receiver_ie'])
       receiver_fantasy_name = driver.find_element(By.XPATH, receiver_index['receiver_fantasy_name'])
 
       receiver_radio.click()
+
       time.sleep(2)
+
+      # Página re-renderiza
+      receiver_cnpj_input = driver.find_element(By.XPATH, receiver_index['receiver_input_cnpj'])
 
       receiver_cnpj_input.click()
       receiver_cnpj_input.send_keys(Keys.HOME + client[1]['CNPJ'])
@@ -145,51 +148,35 @@ with open('clients.json') as clients:
 
       # Todos os selects da página
       operation_nature = driver.find_element(By.XPATH, identification_index['nature_operation'])
-      operation_type = driver.find_element(By.XPATH, identification_index['operation_type_select'])
-      operation_finality = driver.find_element(By.XPATH, identification_index['operation_finality'])
-      operation_presence = driver.find_element(By.XPATH, identification_index['operation_presence'])
+      operation_type = Select(driver.find_element(By.XPATH, identification_index['operation_type_select']))
+      operation_finality = Select(driver.find_element(By.XPATH, identification_index['operation_finality']))
+      operation_presence = Select(driver.find_element(By.XPATH, identification_index['operation_presence']))
       ############################
 
       time.sleep(.5)
 
-      # operation_nature.click()
+      #operation_nature não é um select, então deve-se fazer manualmente
+      operation_nature.click()
 
-      # time.sleep(1)
+      time.sleep(.5)
 
-      # operation_nature_opt = driver = driver.find_element(By.XPATH, identification_index['nature_operation_opt'])
-      # operation_nature_opt.click()
+      operation_nature_opt = driver = driver.find_element(By.XPATH, identification_index['nature_operation_opt'])
+      operation_nature_opt.click()
+      #########################################################################
 
-      # time.sleep(.5)
+      time.sleep(.5)
 
-      # operation_type.click()
+      operation_type.select_by_visible_text('1 - Saída')
+      operation_finality.select_by_visible_text('1 - NF-e normal')
+      operation_presence.select_by_visible_text('1 - Operação presencial')
 
-      # time.sleep(.5)
-
-      # operation_type_opt = driver.find_element(By.XPATH, identification_index['operation_type_select_opt'])
-      # operation_type_opt.click()
-
-      # time.sleep(.5)
-
-      # operation_finality.click()
-
-      # time.sleep(.5)
-
-      # operation_finality_opt = driver.find_element(By.XPATH, identification_index['operation_finality_opt'])
-      # operation_finality_opt.click()
-
-      # time.sleep(.5)
-
-      # operation_presence.click()
-
-      # time.sleep(.5)
-
-      # operation_presence_opt = driver.find_element(By.XPATH, identification_index['operation_presence_opt'])
-      # operation_presence_opt.click()
-
-      # time.sleep(.5)
+      time.sleep(1)
 
       # Scrolla até o fim da página para encontrar o botão
       driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+      # driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
+      time.sleep(1)
 
       operation_btn = driver.find_element(By.XPATH, identification_index['operation_btn'])
       operation_btn.click()
