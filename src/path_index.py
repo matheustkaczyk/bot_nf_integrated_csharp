@@ -39,3 +39,7 @@ identification_index = {
   "operation_presence_opt": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div/div[2]/div[5]/div[1]/div/select/option[3]',
   "operation_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[5]/button[2]'
 }
+
+delivery_index = {
+  "delivery_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[3]/button[2]'
+}

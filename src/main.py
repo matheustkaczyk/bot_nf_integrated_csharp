@@ -10,7 +10,14 @@ import time
 import json
 
 # Importando arquivos de dicionário que contém XPATHS
-from path_index import login_index, main_index, emition_index, receiver_index, identification_index
+from path_index import (
+  login_index,
+  main_index,
+  emition_index,
+  receiver_index,
+  identification_index,
+  delivery_index
+)
 
 load_dotenv('.env')
 
@@ -125,6 +132,7 @@ with open('clients.json') as clients:
       receiver_street_number = driver.find_element(By.XPATH, receiver_index['receiver_street_number'])
       receiver_neighborhood = driver.find_element(By.XPATH, receiver_index['receiver_neighborhood'])
       receiver_btn = driver.find_element(By.XPATH, receiver_index['receiver_btn'])
+
       time.sleep(.5)
 
       # # Garante que é feito o fetch do CEP
@@ -160,7 +168,7 @@ with open('clients.json') as clients:
 
       time.sleep(.5)
 
-      operation_nature_opt = driver = driver.find_element(By.XPATH, identification_index['nature_operation_opt'])
+      operation_nature_opt = driver.find_element(By.XPATH, identification_index['nature_operation_opt'])
       operation_nature_opt.click()
       #########################################################################
 
@@ -174,9 +182,16 @@ with open('clients.json') as clients:
 
       # Scrolla até o fim da página para encontrar o botão
       driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-      # driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
       time.sleep(1)
 
       operation_btn = driver.find_element(By.XPATH, identification_index['operation_btn'])
       operation_btn.click()
+
+      # Tela entrega
+
+      time.sleep(.5)
+
+      delivery_btn = driver.find_element(By.XPATH, delivery_index['delivery_btn'])
+      delivery_btn.click()
+      #################################3
