@@ -8994,3 +8994,1064 @@ JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeE
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
 JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
 JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+SourceActor threw an exception: Error: Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+SourceActor threw an exception: Error: Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1645479407649	Marionette	INFO	Stopped listening on port 40119
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1645479420083	geckodriver	INFO	Listening on 127.0.0.1:32799
+1645479420086	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46511" "-no-remote" "-profile" "/tmp/rust_mozprofileW8ivJt"
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.171: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.175: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.176: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.176: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.176: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.176: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.176: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.441: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.445: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.445: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.445: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.445: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.445: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.446: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.503: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.507: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.507: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.507: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.507: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.507: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.508: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.552: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.556: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.556: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.556: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.556: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.556: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:39957): Gtk-WARNING **: 18:37:00.557: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645479420704	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileW8ivJt/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46511/devtools/browser/1fc0a3ff-03f6-4319-ab85-f9e3bc9bee4b
+1645479421840	Marionette	INFO	Listening on port 45661
+1645479421908	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645479426926	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+SourceActor threw an exception: Error: Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1645479642817	Marionette	INFO	Stopped listening on port 45661
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1645479645712	geckodriver	INFO	Listening on 127.0.0.1:34589
+1645479645715	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50413" "-no-remote" "-profile" "/tmp/rust_mozprofilehK3UNE"
+
+(firefox:40986): Gtk-WARNING **: 18:40:45.785: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:45.789: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:45.790: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:40986): Gtk-WARNING **: 18:40:45.790: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:40986): Gtk-WARNING **: 18:40:45.790: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:40986): Gtk-WARNING **: 18:40:45.790: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:40986): Gtk-WARNING **: 18:40:45.790: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.043: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.048: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.048: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.048: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.048: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.048: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.049: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.107: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.111: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.112: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.112: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.112: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.112: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.112: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.158: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.162: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.162: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.162: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.162: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.162: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:40986): Gtk-WARNING **: 18:40:46.163: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645479646291	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehK3UNE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50413/devtools/browser/88352434-5f5b-42ed-a55c-c302bc471b55
+1645479647405	Marionette	INFO	Listening on port 37375
+1645479647434	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645479652457	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645479715944	Marionette	INFO	Stopped listening on port 37375
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1645479717928	geckodriver	INFO	Listening on 127.0.0.1:35401
+1645479717931	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39063" "-no-remote" "-profile" "/tmp/rust_mozprofileeNJ2d9"
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.002: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.006: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.007: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.007: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.007: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.007: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.007: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.262: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.267: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.267: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.267: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.267: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.267: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.268: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.329: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.333: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.334: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.334: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.334: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.334: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.334: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.380: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.384: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.385: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.385: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.385: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.385: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:41586): Gtk-WARNING **: 18:41:58.385: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645479718510	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeNJ2d9/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39063/devtools/browser/dc126309-d370-4550-ab7a-da2d4c13bd31
+1645479719692	Marionette	INFO	Listening on port 44641
+1645479719752	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645479724777	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645480567980	Marionette	INFO	Stopped listening on port 44641
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1645480578044	geckodriver	INFO	Listening on 127.0.0.1:46431
+1645480578547	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42193" "-no-remote" "-profile" "/tmp/rust_mozprofileVHIzUL"
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.643: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.647: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.648: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.648: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.648: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.648: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.648: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.898: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.902: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.903: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.903: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.903: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.903: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.903: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.962: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.966: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.967: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.967: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.967: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.967: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:43450): Gtk-WARNING **: 18:56:18.968: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:19.013: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:19.018: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:43450): Gtk-WARNING **: 18:56:19.018: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:43450): Gtk-WARNING **: 18:56:19.018: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:43450): Gtk-WARNING **: 18:56:19.018: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:43450): Gtk-WARNING **: 18:56:19.018: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:43450): Gtk-WARNING **: 18:56:19.019: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645480579164	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVHIzUL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42193/devtools/browser/2d9150b3-5f5d-4f6f-9959-b3c0d23dd660
+1645480580294	Marionette	INFO	Listening on port 42803
+1645480580367	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645480585379	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1645480664078	geckodriver	INFO	Listening on 127.0.0.1:53771
+1645480664082	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49567" "-no-remote" "-profile" "/tmp/rust_mozprofileudTDGo"
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.149: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.153: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.154: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.154: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.154: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.154: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.154: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.403: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.407: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.408: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.408: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.408: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.408: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.408: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.465: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.469: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.470: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.470: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.470: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.470: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.470: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.516: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.520: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.521: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.521: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.521: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.521: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:44108): Gtk-WARNING **: 18:57:44.521: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645480664652	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileudTDGo/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49567/devtools/browser/380b7aa5-84e3-4f3a-a991-70ea3944e24c
+1645480665723	Marionette	INFO	Listening on port 37459
+1645480665803	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645480670816	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1645480783566	geckodriver	INFO	Listening on 127.0.0.1:39721
+1645480783569	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50261" "-no-remote" "-profile" "/tmp/rust_mozprofileU0gPxB"
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.637: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.641: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.642: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.642: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.642: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.642: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.642: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.889: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.893: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.893: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.893: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.893: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.893: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.894: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.951: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.956: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.956: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.956: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.956: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.956: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:45085): Gtk-WARNING **: 18:59:43.957: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:44.001: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:44.005: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:45085): Gtk-WARNING **: 18:59:44.006: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:45085): Gtk-WARNING **: 18:59:44.006: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:45085): Gtk-WARNING **: 18:59:44.006: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:45085): Gtk-WARNING **: 18:59:44.006: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:45085): Gtk-WARNING **: 18:59:44.006: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645480784141	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileU0gPxB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50261/devtools/browser/3bc60386-6534-467b-9401-9620ce4dddf9
+1645480785292	Marionette	INFO	Listening on port 44931
+1645480785390	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645480790406	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1645480816294	geckodriver	INFO	Listening on 127.0.0.1:43445
+1645480816297	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51919" "-no-remote" "-profile" "/tmp/rust_mozprofile4O7NfZ"
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.367: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.373: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.374: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.374: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.374: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.374: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.374: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.652: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.658: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.658: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.658: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.658: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.658: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.659: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.734: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.738: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.739: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.739: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.739: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.739: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.739: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.785: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.789: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.790: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.790: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.790: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.790: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:45680): Gtk-WARNING **: 19:00:16.790: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645480816918	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4O7NfZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51919/devtools/browser/67dd7484-880c-4b35-8bf5-68d49fec8674
+1645480818063	Marionette	INFO	Listening on port 33019
+1645480818121	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645480823134	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1645480842338	geckodriver	INFO	Listening on 127.0.0.1:52441
+1645480842342	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33269" "-no-remote" "-profile" "/tmp/rust_mozprofile1Xlngt"
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.412: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.416: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.416: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.416: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.416: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.416: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.417: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.673: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.677: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.678: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.678: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.678: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.678: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.679: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.748: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.752: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.752: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.752: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.752: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.752: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.753: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.796: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.800: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.801: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.801: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.801: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.801: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:46281): Gtk-WARNING **: 19:00:42.801: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645480842927	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1Xlngt/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33269/devtools/browser/1736f335-ad3b-4662-ab30-9d077215e100
+1645480844140	Marionette	INFO	Listening on port 34063
+1645480844162	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645480849177	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645480893845	Marionette	INFO	Stopped listening on port 34063
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1645480921426	geckodriver	INFO	Listening on 127.0.0.1:36803
+1645480921430	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45271" "-no-remote" "-profile" "/tmp/rust_mozprofile46tD9p"
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.501: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.506: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.507: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.507: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.507: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.507: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.507: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.752: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.756: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.757: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.757: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.757: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.757: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.757: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.813: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.817: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.818: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.818: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.818: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.818: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.818: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.862: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.866: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.867: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.867: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.867: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.867: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:47018): Gtk-WARNING **: 19:02:01.867: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645480921999	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile46tD9p/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45271/devtools/browser/4ccc293f-e351-4da6-ab33-8237bb038906
+1645480923131	Marionette	INFO	Listening on port 38071
+1645480923152	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645480928161	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645481018810	Marionette	INFO	Stopped listening on port 38071
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1645481020221	geckodriver	INFO	Listening on 127.0.0.1:38479
+1645481020225	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53717" "-no-remote" "-profile" "/tmp/rust_mozprofile0LwAiu"
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.299: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.304: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.304: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.304: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.304: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.305: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.305: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.563: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.568: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.568: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.568: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.568: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.568: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.569: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.629: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.633: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.634: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.634: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.634: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.634: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.634: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.679: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.683: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.684: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.684: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.684: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.684: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:47760): Gtk-WARNING **: 19:03:40.684: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645481020820	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0LwAiu/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53717/devtools/browser/b75f9260-52c1-426f-a705-f2c347cf94cf
+1645481021932	Marionette	INFO	Listening on port 34637
+1645481022045	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645481027058	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+SourceActor threw an exception: Error: Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://nfae.fazenda.pr.gov.br/nfae/avulsa/emitir/emitente. Code 2152924148.
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645481170278	Marionette	INFO	Stopped listening on port 34637
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1645481253194	geckodriver	INFO	Listening on 127.0.0.1:57757
+1645481253198	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52309" "-no-remote" "-profile" "/tmp/rust_mozprofilerqdzD3"
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.267: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.272: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.272: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.272: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.272: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.272: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.273: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.529: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.533: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.534: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.534: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.534: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.534: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.534: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.590: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.594: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.595: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.595: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.595: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.595: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.595: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.640: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.644: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.645: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.645: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.645: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.645: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:48880): Gtk-WARNING **: 19:07:33.645: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645481253772	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerqdzD3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52309/devtools/browser/43f7a14f-bdbc-43ce-bbda-55c6c243d110
+1645481254874	Marionette	INFO	Listening on port 44553
+1645481254919	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645481259933	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645481282780	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645481285490	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645481288267	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645481289997	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645481295254	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645481305035	Marionette	INFO	Stopped listening on port 44553
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1645481306988	geckodriver	INFO	Listening on 127.0.0.1:54913
+1645481306991	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35815" "-no-remote" "-profile" "/tmp/rust_mozprofile1t9FGo"
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.062: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.068: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.069: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.069: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.069: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.069: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.069: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.326: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.330: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.330: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.330: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.330: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.330: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.331: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.389: Theme parsing error: gtk-dark.css:1:226412: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.393: Theme parsing error: gtk-dark.css:1:297733: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.394: Theme parsing error: gtk-dark.css:1:304021: '-shadow' is not a valid color name
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.394: Theme parsing error: gtk-dark.css:1:304106: not a number
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.394: Theme parsing error: gtk-dark.css:1:304126: not a number
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.394: Theme parsing error: gtk-dark.css:1:304144: Expected a length
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.394: Theme parsing error: gtk-dark.css:1:309678: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.440: Theme parsing error: gtk.css:1:226398: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.444: Theme parsing error: gtk.css:1:298085: unknown syntax for transform
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.445: Theme parsing error: gtk.css:1:304371: '-shadow' is not a valid color name
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.445: Theme parsing error: gtk.css:1:304456: not a number
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.445: Theme parsing error: gtk.css:1:304476: not a number
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.445: Theme parsing error: gtk.css:1:304494: Expected a length
+
+(firefox:49580): Gtk-WARNING **: 19:08:27.445: Theme parsing error: gtk.css:1:310023: unknown syntax for transform
+1645481307586	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1t9FGo/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35815/devtools/browser/2bc28758-3416-4014-9158-97fdf2404a26
+1645481308706	Marionette	INFO	Listening on port 44653
+1645481308817	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645481313835	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+GeckoDriver.prototype.minimizeWindow@chrome://remote/content/marionette/driver.js:2351:11
+JavaScript warning: https://receita.pr.gov.br/assets/plugins/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://receita.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nfae.fazenda.pr.gov.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
