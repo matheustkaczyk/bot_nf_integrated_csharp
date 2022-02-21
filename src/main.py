@@ -45,157 +45,160 @@ with open('clients.json') as clients:
   print('Executando script de emissão')
   print('=====================')
 
-  target_cnpj = '10602819000182'
+  target_cnpj = input('Insira o CNPJ desejado ( apenas os números ): ')
 
-  for client in clients_json:
-    if client[1]['CNPJ'] == target_cnpj:
-  # Página de login elementos
-      time.sleep(.5)
+  if target_cnpj != '':
+      quantity = int(input('Digite a quantidade desejada: '))
 
-      input_login = driver.find_element(By.XPATH, login_index['login_input'])
-      input_password_login = driver.find_element(By.XPATH, login_index['login_password'])
-      login_btn = driver.find_element(By.XPATH, login_index['login_btn'])
+      for client in clients_json:
+        if client[1]['CNPJ'] == target_cnpj:
+      # Página de login elementos
+          time.sleep(.5)
 
-      input_login.send_keys(CPF)
-      input_password_login.send_keys(SENHA)
-      login_btn.click()
+          input_login = driver.find_element(By.XPATH, login_index['login_input'])
+          input_password_login = driver.find_element(By.XPATH, login_index['login_password'])
+          login_btn = driver.find_element(By.XPATH, login_index['login_btn'])
 
-    # Tela principal
+          input_login.send_keys(CPF)
+          input_password_login.send_keys(SENHA)
+          login_btn.click()
 
-      time.sleep(.5)
+        # Tela principal
 
-      main_selector_wrapper = driver.find_element(By.XPATH, main_index['main_selector_wrapper'])
-      main_selector_wrapper.click()
+          time.sleep(.5)
 
-      time.sleep(1)
+          main_selector_wrapper = driver.find_element(By.XPATH, main_index['main_selector_wrapper'])
+          main_selector_wrapper.click()
 
-      main_selector = driver.find_element(By.XPATH, main_index['main_selector'])
-      main_selector.click()
+          time.sleep(1)
 
-    # Tela de emissão
+          main_selector = driver.find_element(By.XPATH, main_index['main_selector'])
+          main_selector.click()
 
-      time.sleep(.5)
+        # Tela de emissão
 
-      # Scroll para o fim da página para encontrar todos os itens
-      driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+          time.sleep(.5)
 
-      time.sleep(.5)
+          # Scroll para o fim da página para encontrar todos os itens
+          driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
-      street_info_me = driver.find_element(By.XPATH, emition_index['street_info'])
-      street_number_me = driver.find_element(By.XPATH, emition_index['street_number'])
-      neighborhood_name_me = driver.find_element(By.XPATH, emition_index['neighborhood_name'])
-      emition_btn = driver.find_element(By.XPATH, emition_index['emition_btn'])
+          time.sleep(.5)
 
-      #Garantindo que os inputs estão vazios
-      street_info_me.send_keys(Keys.CONTROL + 'a')
-      street_info_me.send_keys(Keys.DELETE)
-      street_number_me.send_keys(Keys.CONTROL + 'a')
-      street_number_me.send_keys(Keys.DELETE)
-      neighborhood_name_me.send_keys(Keys.CONTROL + 'a')
-      neighborhood_name_me.send_keys(Keys.DELETE)
-      #######################################
+          street_info_me = driver.find_element(By.XPATH, emition_index['street_info'])
+          street_number_me = driver.find_element(By.XPATH, emition_index['street_number'])
+          neighborhood_name_me = driver.find_element(By.XPATH, emition_index['neighborhood_name'])
+          emition_btn = driver.find_element(By.XPATH, emition_index['emition_btn'])
 
-      street_info_me.send_keys(RUA)
-      street_number_me.send_keys(NUMERO)
-      neighborhood_name_me.send_keys(BAIRRO)
+          #Garantindo que os inputs estão vazios
+          street_info_me.send_keys(Keys.CONTROL + 'a')
+          street_info_me.send_keys(Keys.DELETE)
+          street_number_me.send_keys(Keys.CONTROL + 'a')
+          street_number_me.send_keys(Keys.DELETE)
+          neighborhood_name_me.send_keys(Keys.CONTROL + 'a')
+          neighborhood_name_me.send_keys(Keys.DELETE)
+          #######################################
 
-      time.sleep(.5)
+          street_info_me.send_keys(RUA)
+          street_number_me.send_keys(NUMERO)
+          neighborhood_name_me.send_keys(BAIRRO)
 
-      emition_btn.click()
+          time.sleep(.5)
 
-      time.sleep(.5)
+          emition_btn.click()
 
-      # Tela identificação do recebidor
+          time.sleep(.5)
 
-      # Identificação parte 1
-      receiver_radio = driver.find_element(By.XPATH, receiver_index['receiver_type_btn'])
-      receiver_ie_input = driver.find_element(By.XPATH, receiver_index['receiver_ie'])
-      receiver_fantasy_name = driver.find_element(By.XPATH, receiver_index['receiver_fantasy_name'])
+          # Tela identificação do recebidor
 
-      receiver_radio.click()
+          # Identificação parte 1
+          receiver_radio = driver.find_element(By.XPATH, receiver_index['receiver_type_btn'])
+          receiver_ie_input = driver.find_element(By.XPATH, receiver_index['receiver_ie'])
+          receiver_fantasy_name = driver.find_element(By.XPATH, receiver_index['receiver_fantasy_name'])
 
-      time.sleep(2)
+          receiver_radio.click()
 
-      # Página re-renderiza
-      receiver_cnpj_input = driver.find_element(By.XPATH, receiver_index['receiver_input_cnpj'])
+          time.sleep(2)
 
-      receiver_cnpj_input.click()
-      receiver_cnpj_input.send_keys(Keys.HOME + client[1]['CNPJ'])
-      receiver_ie_input.send_keys(client[1]['IE'])
-      receiver_fantasy_name.send_keys(client[1]['NOME_FANTASIA'])
+          # Página re-renderiza
+          receiver_cnpj_input = driver.find_element(By.XPATH, receiver_index['receiver_input_cnpj'])
 
-      # Identificação parte 2
-      time.sleep(1)
+          receiver_cnpj_input.click()
+          receiver_cnpj_input.send_keys(Keys.HOME + client[1]['CNPJ'])
+          receiver_ie_input.send_keys(client[1]['IE'])
+          receiver_fantasy_name.send_keys(client[1]['NOME_FANTASIA'])
 
-      # Scroll para o fim da página para encontrar todos os itens
-      driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+          # Identificação parte 2
+          time.sleep(1)
 
-      time.sleep(.5)
+          # Scroll para o fim da página para encontrar todos os itens
+          driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
-      receiver_cep = driver.find_element(By.XPATH, receiver_index['receiver_cep'])
-      receiver_street_info = driver.find_element(By.XPATH, receiver_index['receiver_street_info'])
-      receiver_street_number = driver.find_element(By.XPATH, receiver_index['receiver_street_number'])
-      receiver_neighborhood = driver.find_element(By.XPATH, receiver_index['receiver_neighborhood'])
-      receiver_btn = driver.find_element(By.XPATH, receiver_index['receiver_btn'])
+          time.sleep(.5)
 
-      time.sleep(.5)
+          receiver_cep = driver.find_element(By.XPATH, receiver_index['receiver_cep'])
+          receiver_street_info = driver.find_element(By.XPATH, receiver_index['receiver_street_info'])
+          receiver_street_number = driver.find_element(By.XPATH, receiver_index['receiver_street_number'])
+          receiver_neighborhood = driver.find_element(By.XPATH, receiver_index['receiver_neighborhood'])
+          receiver_btn = driver.find_element(By.XPATH, receiver_index['receiver_btn'])
 
-      # # Garante que é feito o fetch do CEP
-      receiver_cep.click()
-      receiver_cep.send_keys(Keys.HOME + CEP)
+          time.sleep(.5)
 
-      time.sleep(1)
-      receiver_street_info.click()
-      # ####################################
+          # # Garante que é feito o fetch do CEP
+          receiver_cep.click()
+          receiver_cep.send_keys(Keys.HOME + CEP)
 
-      time.sleep(.5)
-      receiver_street_info.send_keys(client[1]['LOGRADOURO'])
-      receiver_street_number.send_keys(client[1]['NUMERO'])
-      receiver_neighborhood.send_keys(client[1]['BAIRRO'])
-      
-      time.sleep(.5)
-      receiver_btn.click()
-      time.sleep(.5)
+          time.sleep(1)
+          receiver_street_info.click()
+          # ####################################
 
-      # Tela de Identificação da nota
+          time.sleep(4)
+          receiver_street_info.send_keys(client[1]['LOGRADOURO'])
+          receiver_street_number.send_keys(client[1]['NUMERO'])
+          receiver_neighborhood.send_keys(client[1]['BAIRRO'])
+          
+          time.sleep(.5)
+          receiver_btn.click()
+          time.sleep(.5)
 
-      # Todos os selects da página
-      operation_nature = driver.find_element(By.XPATH, identification_index['nature_operation'])
-      operation_type = Select(driver.find_element(By.XPATH, identification_index['operation_type_select']))
-      operation_finality = Select(driver.find_element(By.XPATH, identification_index['operation_finality']))
-      operation_presence = Select(driver.find_element(By.XPATH, identification_index['operation_presence']))
-      ############################
+          # Tela de Identificação da nota
 
-      time.sleep(.5)
+          # Todos os selects da página
+          operation_nature = driver.find_element(By.XPATH, identification_index['nature_operation'])
+          operation_type = Select(driver.find_element(By.XPATH, identification_index['operation_type_select']))
+          operation_finality = Select(driver.find_element(By.XPATH, identification_index['operation_finality']))
+          operation_presence = Select(driver.find_element(By.XPATH, identification_index['operation_presence']))
+          ############################
 
-      #operation_nature não é um select, então deve-se fazer manualmente
-      operation_nature.click()
+          time.sleep(.5)
 
-      time.sleep(.5)
+          #operation_nature não é um select, então deve-se fazer manualmente
+          operation_nature.click()
 
-      operation_nature_opt = driver.find_element(By.XPATH, identification_index['nature_operation_opt'])
-      operation_nature_opt.click()
-      #########################################################################
+          time.sleep(.5)
 
-      time.sleep(.5)
+          operation_nature_opt = driver.find_element(By.XPATH, identification_index['nature_operation_opt'])
+          operation_nature_opt.click()
+          #########################################################################
 
-      operation_type.select_by_visible_text('1 - Saída')
-      operation_finality.select_by_visible_text('1 - NF-e normal')
-      operation_presence.select_by_visible_text('1 - Operação presencial')
+          time.sleep(.5)
 
-      time.sleep(1)
+          operation_type.select_by_visible_text('1 - Saída')
+          operation_finality.select_by_visible_text('1 - NF-e normal')
+          operation_presence.select_by_visible_text('1 - Operação presencial')
 
-      # Scrolla até o fim da página para encontrar o botão
-      driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+          time.sleep(1)
 
-      time.sleep(1)
+          # Scrolla até o fim da página para encontrar o botão
+          driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
-      operation_btn = driver.find_element(By.XPATH, identification_index['operation_btn'])
-      operation_btn.click()
+          time.sleep(1)
 
-      # Tela entrega
-      time.sleep(.5)
+          operation_btn = driver.find_element(By.XPATH, identification_index['operation_btn'])
+          operation_btn.click()
 
-      delivery_btn = driver.find_element(By.XPATH, delivery_index['delivery_btn'])
-      delivery_btn.click()
-      #################################
+          # Tela entrega
+          time.sleep(.5)
+
+          delivery_btn = driver.find_element(By.XPATH, delivery_index['delivery_btn'])
+          delivery_btn.click()
+          #################################
