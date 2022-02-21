@@ -17,7 +17,8 @@ from path_index import (
   receiver_index,
   identification_index,
   delivery_index,
-  product_index
+  product_index,
+  payment_index
 )
 
 load_dotenv('.env')
@@ -43,6 +44,11 @@ DESCRICAO5KG = os.environ.get('DESCRICAO5KG')
 CODIGO5KG = os.environ.get('CODIGO5KG')
 ########################
 
+# Informações de pagamento
+PAGAMENTO = os.environ.get('PAGAMENTO')
+FORMAPAGAMENTO = os.environ.get('FORMAPAGAMENTO')
+##########################
+
 # Seta o driver do navegador como Firefox
 # o driver entra com a URL especificada
 driver = webdriver.Firefox()
@@ -60,7 +66,7 @@ with open('clients.json') as clients:
   ask_5kg = input('Pacote de 5KG? (sim ou não): ')
 
   if target_cnpj != '':
-      quantity3kg = input('Digite a quantidade desejada: ')
+      quantity3kg = input('Digite a quantidade desejada (3KG): ')
 
       if ask_5kg not in ['false', 'no', 'não', 'n']:
           quantity5kg = input('Digite a quantidade desejada (5KG): ')
@@ -248,9 +254,11 @@ with open('clients.json') as clients:
               
               product_btn = driver.find_element(By.XPATH, product_index['product_btn'])
               product_btn.click()
+              ##################################3
 
               time.sleep(1)
 
+              # Faz a verificação se há a necessidade de emitir pacotes de 5kg
               if ask_5kg in ['yes', 'y', 'true', 't']:
                   new_product_btn = driver.find_element(By.XPATH, product_index['new_product_btn'])
                   new_product_btn.click()
@@ -288,3 +296,37 @@ with open('clients.json') as clients:
 
                   product_next = driver.find_element(By.XPATH, product_index['product_btn_next'])
                   product_next.click()
+
+                  # Tela de pagamento
+
+                  time.sleep(1)
+
+                  # Captura o valor total do input disabled
+                  total_value = driver.find_element(By.XPATH, payment_index['payment_total_input']).get_attribute('value')
+                  payment_add_btn = driver.find_element(By.XPATH, payment_index['payment_add_btn'])
+
+                  time.sleep(.5)
+
+                  payment_add_btn.click()
+
+                  time.sleep(1)
+
+                  payment_method_select = Select(driver.find_element(By.XPATH, payment_index['payment_method_select']))
+                  payment_type_select = Select(driver.find_element(By.XPATH, payment_index['payment_type_select']))
+                  payment_value = driver.find_element(By.XPATH, payment_index['payment_value'])
+                  payment_btn_save = driver.find_element(By.XPATH, payment_index['payment_btn_save'])
+
+                  time.sleep(.5)
+
+                  #Seta os selects e o valor total capturado
+                  payment_method_select.select_by_visible_text(PAGAMENTO)
+                  payment_type_select.select_by_visible_text(FORMAPAGAMENTO)
+                  payment_value.send_keys(Keys.HOME + total_value)
+                  payment_btn_save.click()
+
+                  time.sleep(.5)
+
+                  driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
+                  payment_next_btn = driver.find_element(By.XPATH, payment_index['payment_btn'])
+                  payment_next_btn.click()

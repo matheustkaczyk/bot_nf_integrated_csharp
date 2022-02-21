@@ -56,3 +56,13 @@ product_index = {
   "new_product_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[1]/button',
   "product_btn_next": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[2]/button[2]'
 }
+
+payment_index = {
+  "payment_add_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[2]/button',
+  "payment_total_input": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[4]/div[1]/div[1]/input',
+  "payment_method_select": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[5]/section/div/div/div/div/div[1]/div[1]/div/select',
+  "payment_type_select": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[5]/section/div/div/div/div/div[2]/div[1]/div/select',
+  "payment_value": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[5]/section/div/div/div/div/div[3]/div[1]/input',
+  "payment_btn_save": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[5]/section/div/footer/div/button[1]',
+  "payment_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[3]/button[2]'
+}
