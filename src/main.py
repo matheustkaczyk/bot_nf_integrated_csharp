@@ -16,7 +16,8 @@ from path_index import (
   emition_index,
   receiver_index,
   identification_index,
-  delivery_index
+  delivery_index,
+  product_index
 )
 
 load_dotenv('.env')
@@ -45,7 +46,7 @@ with open('clients.json') as clients:
   print('Executando script de emissão')
   print('=====================')
 
-  target_cnpj = input('Insira o CNPJ desejado ( apenas os números ): ')
+  target_cnpj = input('Insira o CNPJ desejado (apenas os números): ')
 
   if target_cnpj != '':
       quantity = int(input('Digite a quantidade desejada: '))
@@ -202,3 +203,14 @@ with open('clients.json') as clients:
           delivery_btn = driver.find_element(By.XPATH, delivery_index['delivery_btn'])
           delivery_btn.click()
           #################################
+
+          # Tela de produto
+          time.sleep(1)
+
+          product_description = driver.find_element(By.XPATH, product_index['product_description'])
+          product_code = driver.find_element(By.XPATH, product_index['product_code'])
+          product_ncm = driver.find_element(By.XPATH, product_index['product_ncm'])
+          product_cfop = Select(driver.find_element(By.XPATH, product_index['product_cfop_select']))
+          product_unity = driver.find_element(By.XPATH, product_index['product_unity'])
+          product_quantity = driver.find_element(By.XPATH, product_index['product_quantity'])
+          product_value = driver.find_element(By.XPATH, product_index['product_value'])

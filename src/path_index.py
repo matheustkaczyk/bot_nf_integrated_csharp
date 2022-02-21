@@ -43,3 +43,13 @@ identification_index = {
 delivery_index = {
   "delivery_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[3]/button[2]'
 }
+
+product_index = {
+  "product_description": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[2]/div[1]/div[1]/input',
+  "product_code": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div[1]/input',
+  "product_ncm": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[2]/div[3]/div[2]/input',
+  "product_cfop_select": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[2]/div[5]/div[1]/div/select',
+  "product_unity": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[2]/div[6]/div[2]/input',
+  "product_quantity": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[2]/div[7]/div[1]/input',
+  "product_value": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[2]/div[8]/div[1]/input'
+}
