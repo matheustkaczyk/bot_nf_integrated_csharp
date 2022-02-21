@@ -35,12 +35,17 @@ NUMERO = os.environ.get('NUMERO')
 # Seta o driver do navegador como Firefox
 # o driver entra com a URL especificada
 driver = webdriver.Firefox()
+driver.minimize_window()
 driver.get(URL)
 
 with open('clients.json') as clients:
   clients_json = list(json.load(clients).items())
 
-  target_cnpj = '10602819000263'
+  print('=====================')
+  print('Executando script de emissão')
+  print('=====================')
+
+  target_cnpj = '10602819000182'
 
   for client in clients_json:
     if client[1]['CNPJ'] == target_cnpj:
@@ -189,9 +194,8 @@ with open('clients.json') as clients:
       operation_btn.click()
 
       # Tela entrega
-
       time.sleep(.5)
 
       delivery_btn = driver.find_element(By.XPATH, delivery_index['delivery_btn'])
       delivery_btn.click()
-      #################################3
+      #################################
