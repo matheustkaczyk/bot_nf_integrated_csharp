@@ -353,6 +353,8 @@ with open('clients.json') as clients:
 
               driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
+              time.sleep(1)
+
               resume_btn = driver.find_element(By.XPATH, resume_index['resume_btn'])
 
               resume_btn.click()
