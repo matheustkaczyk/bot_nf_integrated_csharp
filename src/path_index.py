@@ -66,3 +66,8 @@ payment_index = {
   "payment_btn_save": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[5]/section/div/footer/div/button[1]',
   "payment_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[3]/button[2]'
 }
+
+transport_index = {
+  "transport_type_select": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/select',
+  "tranport_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[2]/button[2]'
+}

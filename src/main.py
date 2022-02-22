@@ -18,7 +18,8 @@ from path_index import (
   identification_index,
   delivery_index,
   product_index,
-  payment_index
+  payment_index,
+  transport_index
 )
 
 load_dotenv('.env')
@@ -292,41 +293,57 @@ with open('clients.json') as clients:
                   product_btn = driver.find_element(By.XPATH, product_index['product_btn'])
                   product_btn.click()
 
-                  time.sleep(1)
+              time.sleep(1)
 
-                  product_next = driver.find_element(By.XPATH, product_index['product_btn_next'])
-                  product_next.click()
+              product_next = driver.find_element(By.XPATH, product_index['product_btn_next'])
+              product_next.click()
 
-                  # Tela de pagamento
+              # Tela de pagamento
 
-                  time.sleep(1)
+              time.sleep(1)
 
-                  # Captura o valor total do input disabled
-                  total_value = driver.find_element(By.XPATH, payment_index['payment_total_input']).get_attribute('value')
-                  payment_add_btn = driver.find_element(By.XPATH, payment_index['payment_add_btn'])
+              # Captura o valor total do input disabled
+              total_value = driver.find_element(By.XPATH, payment_index['payment_total_input']).get_attribute('value')
+              payment_add_btn = driver.find_element(By.XPATH, payment_index['payment_add_btn'])
 
-                  time.sleep(.5)
+              time.sleep(.5)
 
-                  payment_add_btn.click()
+              payment_add_btn.click()
 
-                  time.sleep(1)
+              time.sleep(1)
 
-                  payment_method_select = Select(driver.find_element(By.XPATH, payment_index['payment_method_select']))
-                  payment_type_select = Select(driver.find_element(By.XPATH, payment_index['payment_type_select']))
-                  payment_value = driver.find_element(By.XPATH, payment_index['payment_value'])
-                  payment_btn_save = driver.find_element(By.XPATH, payment_index['payment_btn_save'])
+              payment_method_select = Select(driver.find_element(By.XPATH, payment_index['payment_method_select']))
+              payment_type_select = Select(driver.find_element(By.XPATH, payment_index['payment_type_select']))
+              payment_value = driver.find_element(By.XPATH, payment_index['payment_value'])
+              payment_btn_save = driver.find_element(By.XPATH, payment_index['payment_btn_save'])
 
-                  time.sleep(.5)
+              time.sleep(.5)
 
-                  #Seta os selects e o valor total capturado
-                  payment_method_select.select_by_visible_text(PAGAMENTO)
-                  payment_type_select.select_by_visible_text(FORMAPAGAMENTO)
-                  payment_value.send_keys(Keys.HOME + total_value)
-                  payment_btn_save.click()
+              #Seta os selects e o valor total capturado
+              payment_method_select.select_by_visible_text(PAGAMENTO)
+              payment_type_select.select_by_visible_text(FORMAPAGAMENTO)
+              payment_value.send_keys(Keys.HOME + total_value)
+              payment_btn_save.click()
 
-                  time.sleep(.5)
+              time.sleep(.5)
 
-                  driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+              driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
-                  payment_next_btn = driver.find_element(By.XPATH, payment_index['payment_btn'])
-                  payment_next_btn.click()
+              payment_next_btn = driver.find_element(By.XPATH, payment_index['payment_btn'])
+              payment_next_btn.click()
+
+              time.sleep(1)
+
+              #Página de transporte
+
+              transport_type_select = Select(driver.find_element(By.XPATH, transport_index['transport_type_select']))
+              transport_type_select.select_by_visible_text('3 - Transporte Próprio por conta do Remetente')
+
+              time.sleep(.5)
+
+              driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
+              transport_btn = driver.find_element(By.XPATH, transport_index['transport_btn'])
+              transport_btn.click()
+
+              #Tela de resumo
