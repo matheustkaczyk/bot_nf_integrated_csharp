@@ -71,3 +71,7 @@ transport_index = {
   "transport_type_select": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div/select',
   "tranport_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[2]/button[2]'
 }
+
+resume_index = {
+  "resume_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[2]/button[2]'
+}

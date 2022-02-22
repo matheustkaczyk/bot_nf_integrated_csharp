@@ -19,7 +19,8 @@ from path_index import (
   delivery_index,
   product_index,
   payment_index,
-  transport_index
+  transport_index,
+  resume_index
 )
 
 load_dotenv('.env')
@@ -347,3 +348,11 @@ with open('clients.json') as clients:
               transport_btn.click()
 
               #Tela de resumo
+
+              time.sleep(1)
+
+              driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
+              resume_btn = driver.find_element(By.XPATH, resume_index['resume_btn'])
+
+              resume_btn.click()
