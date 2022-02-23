@@ -356,4 +356,6 @@ with open('clients.json') as clients:
 
               resume_btn = driver.find_element(By.XPATH, resume_index['resume_btn'])
 
+              time.sleep(.5)
+
               resume_btn.click()
