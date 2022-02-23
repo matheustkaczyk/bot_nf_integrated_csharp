@@ -1,2 +1,5 @@
 .env
 .venv
+clients.json
+./src/__pycache__
+geckodriver.log
