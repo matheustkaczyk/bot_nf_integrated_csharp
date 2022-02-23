@@ -60,9 +60,8 @@ driver.get(URL)
 with open('clients.json') as clients:
   clients_json = list(json.load(clients).items())
 
-  print('=====================')
-  print('Executando script de emissão')
-  print('=====================')
+  print('Inicializando o bot')
+  print('===================')
 
   target_cnpj = input('Insira o CNPJ desejado (apenas os números): ')
   ask_5kg = input('Pacote de 5KG? (sim ou não): ')
