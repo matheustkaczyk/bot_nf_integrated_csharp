@@ -2,4 +2,7 @@
 .venv
 clients.json
 src/__pycache__/
+build/
+dist/
 geckodriver.log
+Bot emissao NF.spec
