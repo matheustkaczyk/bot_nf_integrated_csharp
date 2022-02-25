@@ -6,9 +6,9 @@
 
 O projeto ainda está em desenvolvimento porém já está funcional, segue algumas melhorias que pretendo adicionar:
 
-- [] Melhor organização do código (está tudo em um só arquivo)
-- [] Melhorar a experiência de usar o terminal
-- [] Criar funções que printem exatamente oque está acontecendo no momento com a página web
+- [ ] Melhor organização do código (está tudo em um só arquivo)
+- [ ] Melhorar a experiência de usar o terminal
+- [ ] Criar funções que printem exatamente oque está acontecendo no momento com a página web
 
 ## 💻 Pré-requisitos
 
