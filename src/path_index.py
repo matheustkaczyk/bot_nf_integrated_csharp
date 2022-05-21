@@ -5,8 +5,8 @@ login_index = {
 }
 
 main_index = {
-  "main_selector_wrapper": '/html/body/div/div/div/div[2]/div[1]/div[1]/div/a[15]',
-  "main_selector": '//*[@id="menuLink1205"]'
+  "main_selector_wrapper": '/html/body/div/div/div/div/div[2]/div[1]/div[1]/div/a[15]',
+  "main_selector": '/html/body/div/div/div/div/div[2]/div[1]/div[1]/div/div[15]/a[2]'
 }
 
 emition_index = {

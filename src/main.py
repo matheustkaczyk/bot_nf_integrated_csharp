@@ -54,7 +54,7 @@ FORMAPAGAMENTO = os.environ.get("FORMAPAGAMENTO")
 
 # Seta o driver do navegador como Firefox
 # o driver entra com a URL especificada
-driver = webdriver.Firefox()
+driver = webdriver.Chrome()
 driver.minimize_window()
 driver.get(URL)
 
@@ -65,7 +65,7 @@ with open("clients.json") as clients:
     print("===================")
     print('Informações cadastradas: \n')
     for client in clients_json:
-        print(client[1]["NOME_FANTASIA"], client[1]['CNPJ'])
+        print(client[1]["NOME_FANTASIA"], client[1]['CNPJ'],client[1]['VALOR'])
 
     target_cnpj = input("Insira o CNPJ desejado (apenas os números): ")
     ask_5kg = input("Pacote de 5KG? (sim ou não): ")
