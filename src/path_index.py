@@ -53,7 +53,7 @@ product_index = {
   "product_quantity": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[2]/div[7]/div[1]/input',
   "product_value": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[2]/div[8]/div[1]/input',
   "product_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div/div/div/div/div[3]/button[2]',
-  "new_product_btn": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[1]/div[1]/button',
+  "new_product_btn": '//*[@id="app"]/div[1]/div/div/div[1]/div[1]/button',
   "product_btn_next": '/html/body/div/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/div[2]/button[2]'
 }
 

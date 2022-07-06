@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from dotenv import load_dotenv
+from webdriver_manager.chrome import ChromeDriverManager
 
 import time
 import json
@@ -54,8 +55,7 @@ FORMAPAGAMENTO = os.environ.get("FORMAPAGAMENTO")
 
 # Seta o driver do navegador como Firefox
 # o driver entra com a URL especificada
-driver = webdriver.Chrome()
-driver.minimize_window()
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get(URL)
 
 with open("clients.json") as clients:
@@ -332,7 +332,7 @@ with open("clients.json") as clients:
                 time.sleep(1)
 
                 # Faz a verificação se há a necessidade de emitir pacotes de 5kg
-                if ask_5kg in ["yes", "y", "true", "t"]:
+                if ask_5kg not in ["n", "nao", "no", "false", "não"]:
                     new_product_btn = driver.find_element(
                         By.XPATH, product_index["new_product_btn"]
                     )
