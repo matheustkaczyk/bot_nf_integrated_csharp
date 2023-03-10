@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.chrome.options import Options
 from dotenv import load_dotenv
 from webdriver_manager.chrome import ChromeDriverManager
 
@@ -52,9 +53,14 @@ PAGAMENTO = os.environ.get("PAGAMENTO")
 FORMAPAGAMENTO = os.environ.get("FORMAPAGAMENTO")
 ##########################
 
+# Seta informações para o navegador ser headless
+options = Options()
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
+
 # Seta o driver do navegador como Firefox
 # o driver entra com a URL especificada
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 driver.get(URL)
 
 print("Inicializando o bot")
@@ -76,7 +82,7 @@ VALUE5 = arguments[9]
 
 # Página de login elementos
 time.sleep(0.5)
-
+print("LOGANDO")
 input_login = driver.find_element(By.XPATH, login_index["login_input"])
 input_password_login = driver.find_element(
     By.XPATH, login_index["login_password"]
@@ -90,6 +96,8 @@ login_btn.click()
 # Tela principal
 
 time.sleep(0.5)
+
+print("TELA PRINCIPAL")
 
 main_selector_wrapper = driver.find_element(
     By.XPATH, main_index["main_selector_wrapper"]
@@ -106,6 +114,8 @@ main_selector.click()
 # Tela de emissão
 
 time.sleep(0.5)
+
+print("TELA DE EMISSÃO")
 
 # Scroll para o fim da página para encontrar todos os itens
 driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
@@ -145,6 +155,8 @@ emition_btn.click()
 time.sleep(0.5)
 
 # Tela identificação do recebidor
+
+print("TELA IDENTIFICAÇÃO DO RECEBIDOR")
 
 # Identificação parte 1
 receiver_radio = driver.find_element(
@@ -215,6 +227,8 @@ receiver_btn.click()
 time.sleep(0.5)
 
 # Tela de Identificação da nota
+
+print("TELA DE IDENTIFICAÇÃO DA NOTA")
 
 # Todos os selects da página
 operation_nature = driver.find_element(
@@ -333,6 +347,8 @@ if QUANTITY5 != "" and VALUE5 != "":
     )
     new_product_btn.click()
 
+    print("EMITINDO PCT 5KG")
+
     time.sleep(1)
 
     product_description = driver.find_element(
@@ -393,6 +409,8 @@ product_next.click()
 
 time.sleep(1)
 
+print("TELA DE PAGAMENTO")
+
 # Captura o valor total do input disabled
 total_value = driver.find_element(
     By.XPATH, payment_index["payment_total_input"]
@@ -443,6 +461,8 @@ time.sleep(1)
 
 # Página de transporte
 
+print("TELA DE TRANSPORTE")
+
 transport_type_select = Select(
     driver.find_element(
         By.XPATH, transport_index["transport_type_select"]
@@ -463,6 +483,8 @@ transport_btn.click()
 
 # Tela de resumo
 
+print("TELA DE RESUMO")
+
 time.sleep(1)
 
 driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
@@ -477,10 +499,10 @@ resume_btn.click()
 
 time.sleep(1)
 
-# confirmation_span = driver.find_element(
-#     By.XPATH, done_index["confirmation_span"]
-# )
-# if confirmation_span.text == "AUTORIZADA":
-#     print("NF emitida com sucesso!")
+confirmation_span = driver.find_element(
+    By.XPATH, done_index["confirmation_span"]
+)
+if confirmation_span.text == "AUTORIZADA":
+    print("NF EMITIDA COM SUCESSO!")
 
 input()
