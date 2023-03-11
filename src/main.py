@@ -58,6 +58,17 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
+# Pega o diretório de Downloads do usuario
+home = os.path.expanduser("~")
+download_dir = os.path.join(home, "Downloads")
+
+options.add_experimental_option('prefs', {
+    'download.default_directory': download_dir,
+    'download.prompt_for_download': False,
+    'download.directory_upgrade': True,
+    'safebrowsing.enabled': True
+})
+
 # Seta o driver do navegador como Firefox
 # o driver entra com a URL especificada
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
@@ -499,10 +510,10 @@ resume_btn.click()
 
 time.sleep(1)
 
-confirmation_span = driver.find_element(
-    By.XPATH, done_index["confirmation_span"]
-)
-if confirmation_span.text == "AUTORIZADA":
-    print("NF EMITIDA COM SUCESSO!")
+# confirmation_span = driver.find_element(
+#     By.XPATH, done_index["confirmation_span"]
+# )
+# if confirmation_span.text == "AUTORIZADA":
+#     print("NF EMITIDA COM SUCESSO!")
 
 input()
