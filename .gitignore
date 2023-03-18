@@ -7,3 +7,4 @@ dist/
 geckodriver.log
 Bot emissao NF.spec
 chromedriver.exe
+logfile.log
