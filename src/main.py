@@ -56,6 +56,9 @@ PAGAMENTO = os.environ.get("PAGAMENTO")
 FORMAPAGAMENTO = os.environ.get("FORMAPAGAMENTO")
 ##########################
 
+# Seta informações adicionais para o browser
+options = Options()
+
 # Pega o diretório de Downloads do usuario
 home = os.path.expanduser("~")
 download_dir = os.path.join(home, "Downloads")
