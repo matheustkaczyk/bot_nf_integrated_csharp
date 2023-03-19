@@ -77,6 +77,6 @@ resume_index = {
 }
 
 done_index = {
-  "confirmation_span": '//*[@id="app"]/div[1]/div/div/article/div[2]/div/div[2]/span',
+  "confirmation_span": '/html/body/div/div/div/div[2]/div[2]/div[5]/div/div[1]/div/div/article/div[2]/div/div[2]/span',
   "download_button": '//*[@id="app"]/div[1]/div/div/article/footer/button[3]'
 }
