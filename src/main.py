@@ -549,7 +549,7 @@ try:
     new_file_path = (
         download_dir
         + "\\NFe_"
-        + str(EMITENTE)
+        + str(FANTASY_NAME)
         + "_"
         + datetime.now().strftime("%d%m%Y_%H%M%S")
         + ".pdf"
