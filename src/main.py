@@ -547,12 +547,7 @@ try:
     ## Customiza o nome do arquivo
     old_file_path = download_dir + "\\DANFE.pdf"
     new_file_path = (
-        download_dir
-        + "\\NFe_"
-        + str(FANTASY_NAME)
-        + "_"
-        + datetime.now().strftime("%d%m%Y_%H%M%S")
-        + ".pdf"
+    f"{download_dir}\\NFe_{FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}.pdf"
     )
 
     os.rename(
