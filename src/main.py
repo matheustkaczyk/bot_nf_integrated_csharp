@@ -1,14 +1,17 @@
 import os
 import sys
 import time
+import datetime
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
-from dotenv import load_dotenv
+from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from dotenv import load_dotenv
+import subprocess
 
 # Importando arquivos de dicionário que contém XPATHS
 from path_index import (
@@ -54,14 +57,24 @@ FORMAPAGAMENTO = os.environ.get("FORMAPAGAMENTO")
 ##########################
 
 try:
-    # Seta informações para o navegador ser headless
-    options = Options()
-    options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
-
     # Pega o diretório de Downloads do usuario
     home = os.path.expanduser("~")
     download_dir = os.path.join(home, "Downloads")
+
+    # Seta informações para o navegador ser headless
+    options = Options()
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--headless")
+    options.add_argument("--disable-popup-blocking")
+    options.add_argument("--disable-notifications")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--disable-features=VizDisplayCompositor")
+    prefs = {"download.default_directory": download_dir}
+    options.add_experimental_option("prefs", prefs)
 
     options.add_experimental_option('prefs', {
         'download.default_directory': download_dir,
@@ -70,9 +83,14 @@ try:
         'safebrowsing.enabled': True
     })
 
+    chromeDriver = ChromeDriverManager().install()
+
+    service = Service(chromeDriver)
+    service.creationflags = subprocess.CREATE_NO_WINDOW
+
     # Seta o driver do navegador como Firefox
     # o driver entra com a URL especificada
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    driver = webdriver.Chrome(chromeDriver, options=options, service=service)
     driver.get(URL)
 
     print("Inicializando o bot")
@@ -95,6 +113,7 @@ try:
     # Página de login elementos
     time.sleep(0.5)
     print("LOGANDO")
+
     input_login = driver.find_element(By.XPATH, login_index["login_input"])
     input_password_login = driver.find_element(
         By.XPATH, login_index["login_password"]
@@ -511,14 +530,23 @@ try:
 
     time.sleep(1)
 
-    # confirmation_span = driver.find_element(
-    #     By.XPATH, done_index["confirmation_span"]
-    # )
-    # if confirmation_span.text == "AUTORIZADA":
-    #     print("NF EMITIDA COM SUCESSO!")
+    print("NF EMITIDA COM SUCESSO")
+
+    print("TELA DE DOWNLOAD")
+
+    download_button = driver.find_element(
+        By.XPATH, done_index["download_button"]
+    )
+
+    download_button.click()
+
+    time.sleep(1.5)
+
+    # download_button.click()
+
 
 except Exception as e:
     print("ERRO AO EMITIR NF")
     print(e)
-    
+
 input()
