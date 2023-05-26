@@ -542,8 +542,23 @@ try:
 
     time.sleep(1.5)
 
-    # download_button.click()
+    print("NF BAIXADA COM SUCESSO")
 
+    ## Customiza o nome do arquivo
+    old_file_path = download_dir + "\\DANFE.pdf"
+    new_file_path = (
+        download_dir
+        + "\\NFe_"
+        + str(EMITENTE)
+        + "_"
+        + datetime.now().strftime("%d%m%Y_%H%M%S")
+        + ".pdf"
+    )
+
+    os.rename(
+        old_file_path,
+        new_file_path
+    )
 
 except Exception as e:
     print("ERRO AO EMITIR NF")
