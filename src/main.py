@@ -559,4 +559,6 @@ except Exception as e:
     print("ERRO AO EMITIR NF")
     print(e)
 
-input()
+finally:
+    driver.quit()
+    input()
