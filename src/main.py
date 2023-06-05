@@ -550,13 +550,20 @@ try:
     f"{download_dir}\\NFe_{FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}.pdf"
     )
 
-    os.rename(
-        old_file_path,
-        new_file_path
-    )
+    ## Fica esperando o arquivo ser baixado
+    while not os.path.exists(old_file_path):
+        time.sleep(1)
+
+    try:
+        os.rename(
+            old_file_path,
+            new_file_path
+        )
+    except Exception as e:
+        raise Exception(e)
 
 except Exception as e:
-    print("ERRO AO EMITIR NF")
+    print("ERRO - ")
     print(e)
 
 finally:
