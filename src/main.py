@@ -73,9 +73,6 @@ try:
     options.add_argument("--disable-infobars")
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--disable-features=VizDisplayCompositor")
-    prefs = {"download.default_directory": download_dir}
-    options.add_experimental_option("prefs", prefs)
-
     options.add_experimental_option('prefs', {
         'download.default_directory': download_dir,
         'download.prompt_for_download': False,
