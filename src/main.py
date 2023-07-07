@@ -13,6 +13,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from dotenv import load_dotenv
 import subprocess
 
+from utils.process_is_locked import is_file_locked
+
 # Importando arquivos de dicionário que contém XPATHS
 from path_index import (
     login_index,
@@ -549,15 +551,19 @@ try:
 
     ## Fica esperando o arquivo ser baixado
     while not os.path.exists(old_file_path):
-        time.sleep(1)
+        time.sleep(.5)
 
-    try:
-        os.rename(
-            old_file_path,
-            new_file_path
-        )
-    except Exception as e:
-        raise Exception(e)
+    ## Verifica se o arquivo ainda está sendo usado por outro processo
+    if not is_file_locked(old_file_path):
+        try:
+            os.rename(
+                old_file_path,
+                new_file_path
+            )
+        except Exception as e:
+            raise Exception(e)
+    else:
+        raise Exception("O arquivo ainda está sendo usado por outro processo.")
 
 except Exception as e:
     print("ERRO - ")
