@@ -58,10 +58,39 @@ PAGAMENTO = os.environ.get("PAGAMENTO")
 FORMAPAGAMENTO = os.environ.get("FORMAPAGAMENTO")
 ##########################
 
+# Recebendo argumentos
+try:
+    arguments = sys.argv[1].split('-')
+
+    CNPJ = arguments[0]
+    FANTASY_NAME = arguments[1]
+    IE = arguments[2]
+    ADDRESS_NAME = arguments[3]
+    ADDRESS_NUMBER = arguments[4]
+    ADDRESS_NEIGHBORHOOD = arguments[5]
+    QUANTITY3 = arguments[6]
+    VALUE3 = arguments[7]
+    QUANTITY5 = arguments[8]
+    VALUE5 = arguments[9]
+
+    if (CNPJ == Null or FANTASY_NAME == Null or IE == Null or ADDRESS_NAME == Null or ADDRESS_NUMBER == Null or ADDRESS_NEIGHBORHOOD == Null or QUANTITY3 == Null or VALUE3 == Null):
+        raise Exception("Argumentos não recebidos")
+
+except Exception as e:
+    print(e)
+    print("Saindo...")
+    sys.exit()
+
 try:
     # Pega o diretório de Downloads do usuario
     home = os.path.expanduser("~")
     download_dir = os.path.join(home, "Downloads")
+
+    # Customiza o nome do arquivo
+    old_file_path = download_dir + "\\DANFE.pdf"
+    new_file_path = (
+    f"{download_dir}\\NFe_{FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}.pdf"
+    )
 
     # Seta informações para o navegador ser headless
     options = Options()
@@ -94,20 +123,6 @@ try:
 
     print("Inicializando o bot")
     print("===================")
-
-    # Recebendo argumentos
-    arguments = sys.argv[1].split('-')
-
-    CNPJ = arguments[0]
-    FANTASY_NAME = arguments[1]
-    IE = arguments[2]
-    ADDRESS_NAME = arguments[3]
-    ADDRESS_NUMBER = arguments[4]
-    ADDRESS_NEIGHBORHOOD = arguments[5]
-    QUANTITY3 = arguments[6]
-    VALUE3 = arguments[7]
-    QUANTITY5 = arguments[8]
-    VALUE5 = arguments[9]
 
     # Página de login elementos
     time.sleep(0.5)
@@ -541,17 +556,11 @@ try:
 
     time.sleep(1.5)
 
-    print("NF BAIXADA COM SUCESSO")
-
-    ## Customiza o nome do arquivo
-    old_file_path = download_dir + "\\DANFE.pdf"
-    new_file_path = (
-    f"{download_dir}\\NFe_{FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}.pdf"
-    )
-
     ## Fica esperando o arquivo ser baixado
     while not os.path.exists(old_file_path):
         time.sleep(.5)
+    
+    print("NF BAIXADA COM SUCESSO")
 
     ## Verifica se o arquivo ainda está sendo usado por outro processo
     if not is_file_locked(old_file_path):
