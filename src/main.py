@@ -73,24 +73,29 @@ try:
     QUANTITY5 = arguments[8]
     VALUE5 = arguments[9]
 
-    if (CNPJ == Null or FANTASY_NAME == Null or IE == Null or ADDRESS_NAME == Null or ADDRESS_NUMBER == Null or ADDRESS_NEIGHBORHOOD == Null or QUANTITY3 == Null or VALUE3 == Null):
+    if (CNPJ == None or FANTASY_NAME == None or IE == None or ADDRESS_NAME == None or ADDRESS_NUMBER == None or ADDRESS_NEIGHBORHOOD == None or QUANTITY3 == None or VALUE3 == None):
         raise Exception("Argumentos não recebidos")
 
 except Exception as e:
     print(e)
     print("Saindo...")
+    time.sleep(1)
     sys.exit()
 
 try:
     # Pega o diretório de Downloads do usuario
     home = os.path.expanduser("~")
     download_dir = os.path.join(home, "Downloads")
+    nf_dir = os.path.join(download_dir, "NFs")
 
     # Customiza o nome do arquivo
     old_file_path = download_dir + "\\DANFE.pdf"
+    new_folder_name = f"{FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}"
     new_file_path = (
     f"{download_dir}\\NFe_{FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}.pdf"
     )
+
+    download_nf_dir = os.path.join(nf_dir, new_folder_name)
 
     # Seta informações para o navegador ser headless
     options = Options()
@@ -105,7 +110,7 @@ try:
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--disable-features=VizDisplayCompositor")
     options.add_experimental_option('prefs', {
-        'download.default_directory': download_dir,
+        'download.default_directory': download_nf_dir,
         'download.prompt_for_download': False,
         'download.directory_upgrade': True,
         'safebrowsing.enabled': True
@@ -557,22 +562,10 @@ try:
     time.sleep(1.5)
 
     ## Fica esperando o arquivo ser baixado
-    while not os.path.exists(old_file_path):
+    while not os.path.exists(download_nf_dir + "\\DANFE.pdf"):
         time.sleep(.5)
     
     print("NF BAIXADA COM SUCESSO")
-
-    ## Verifica se o arquivo ainda está sendo usado por outro processo
-    if not is_file_locked(old_file_path):
-        try:
-            os.rename(
-                old_file_path,
-                new_file_path
-            )
-        except Exception as e:
-            raise Exception(e)
-    else:
-        raise Exception("O arquivo ainda está sendo usado por outro processo.")
 
 except Exception as e:
     print("ERRO - ")
@@ -580,4 +573,5 @@ except Exception as e:
 
 finally:
     driver.quit()
-    input()
+    print("OPERAÇÃO FINALIZADA COM SUCESSO")
+    time.sleep(5)
