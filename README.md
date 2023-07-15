@@ -1,5 +1,3 @@
-GitHub Copilot: Sure, here's an updated README file that includes the `startProcess()` method:
-
 # NFe Downloader
 
 This is a Python script that automates the download of electronic invoices (NF-e) from the Brazilian government's website. The script uses Selenium to navigate the website and download the invoices in PDF format.
