@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 import subprocess
 
 from utils.process_is_locked import is_file_locked
+from utils.simplify_string import simplify_string
 
 # Importando arquivos de dicionário que contém XPATHS
 from path_index import (
@@ -89,8 +90,11 @@ try:
     nf_dir = os.path.join(download_dir, "NFs")
 
     # Customiza o nome do arquivo
+
+    simplified_FANTASY_NAME = simplify_string_string(FANTASY_NAME)
+
     old_file_path = download_dir + "\\DANFE.pdf"
-    new_folder_name = f"{FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}"
+    new_folder_name = f"{simplified_FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}"
     new_file_path = (
     f"{download_dir}\\NFe_{FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}.pdf"
     )
@@ -559,6 +563,8 @@ try:
 
     download_button.click()
 
+    print('BAIXANDO NF...')
+
     time.sleep(1.5)
 
     ## Fica esperando o arquivo ser baixado
@@ -573,5 +579,5 @@ except Exception as e:
 
 finally:
     driver.quit()
-    print("OPERAÇÃO FINALIZADA COM SUCESSO")
+    print("OPERAÇÃO FINALIZADA")
     time.sleep(5)
