@@ -1,7 +1,7 @@
 .env
 .venv
 clients.json
-src/__pycache__/
+src/utils/__pycache__/
 build/
 dist/
 geckodriver.log
