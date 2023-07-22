@@ -91,7 +91,7 @@ try:
 
     # Customiza o nome do arquivo
 
-    simplified_FANTASY_NAME = simplify_string_string(FANTASY_NAME)
+    simplified_FANTASY_NAME = simplify_string(FANTASY_NAME)
 
     old_file_path = download_dir + "\\DANFE.pdf"
     new_folder_name = f"{simplified_FANTASY_NAME}_{datetime.datetime.now().strftime('%d%m%Y_%H%M%S')}"
