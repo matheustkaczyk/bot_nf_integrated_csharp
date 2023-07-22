@@ -1,6 +1,6 @@
 def simplify_string(string):
     """
-    Simplifies the content of a string and removes special characters.
+    Simplifies the content of a string by removing special characters, removing spaces and making it all lower case.
 
     Args:
         string: The string to be simplified.
