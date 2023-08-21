@@ -9,7 +9,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from dotenv import load_dotenv
 import subprocess
 
@@ -31,6 +30,7 @@ from path_index import (
     done_index,
 )
 
+# Carregando variáveis de ambiente
 load_dotenv(".env")
 
 # Variáveis de ambiente
@@ -104,6 +104,7 @@ try:
 
         # Seta informações para o navegador ser headless
         options = Options()
+        options.browser_version = "116.0.5845.96"
         options.add_argument("--disable-extensions")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
@@ -114,6 +115,7 @@ try:
         options.add_argument("--disable-infobars")
         options.add_argument("--window-size=1920,1080")
         options.add_argument("--disable-features=VizDisplayCompositor")
+        options.add_argument("--log-level=3")
         options.add_experimental_option('prefs', {
             'download.default_directory': download_nf_dir,
             'download.prompt_for_download': False,
@@ -121,14 +123,11 @@ try:
             'safebrowsing.enabled': True
         })
 
-        chromeDriver = ChromeDriverManager(version='114.0.5735.90').install()
-
-        service = Service(chromeDriver)
+        service = Service()
         service.creationflags = subprocess.CREATE_NO_WINDOW
 
-        # Seta o driver do navegador como Firefox
         # o driver entra com a URL especificada
-        driver = webdriver.Chrome(chromeDriver, options=options, service=service)
+        driver = webdriver.Chrome(options=options, service=service)
         driver.get(URL)
 
         print("Inicializando o bot")
